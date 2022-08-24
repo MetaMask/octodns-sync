@@ -41,4 +41,4 @@ ${_footer}"
   _user="octodns-sync" \
   _token="${PR_COMMENT_TOKEN}" \
   _body="${_body}" \
-  python3 ./make-request.py
+  python3 scripts/make-request.py
