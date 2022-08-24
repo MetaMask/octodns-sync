@@ -37,8 +37,8 @@ $(cat "${_planfile}")
 ${_footer}"
   # Post the comment
   # TODO: Rewrite post to use gh rather than python3
-  _user="github-actions" \
+  _url="${COMMENTS_URL}" \
+  _user="octodns-sync" \
   _token="${PR_COMMENT_TOKEN}" \
   _body="${_body}" \
-  GITHUB_EVENT_PATH="${GITHUB_EVENT_PATH}" \
-  python3 -c ./comment-submit.py
+  python3 ./make-request.py
