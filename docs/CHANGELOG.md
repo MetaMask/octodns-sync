@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2023-02-12
+
+### Added
+
+- ([#93](https://github.com/solvaholic/octodns-sync/pull/93)) Add output **log** to include output from `octodns-sync` command.
+- ([#98](https://github.com/solvaholic/octodns-sync/pull/98)) Integrate octodns' force flag.
+
+### Removed
+
+- ([#93](https://github.com/solvaholic/octodns-sync/pull/93)) `octodns-sync` command output no longer appears in workflow run logs.
+
+### Fixed
+
+- ([#92](https://github.com/solvaholic/octodns-sync/issues/92)) `octodns-sync` may silently fail on some Actions runners.
+- ([#94](https://github.com/solvaholic/octodns-sync/issues/94)) `set-output` is being deprecated.
+- ([#97](https://github.com/solvaholic/octodns-sync/issues/97)) `COMMENTS_URL` is not set correctly.
+
 ## [3.0.0] - 2022-06-21
 
 ### Removed
